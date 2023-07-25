@@ -31,10 +31,9 @@ export default function App() {
     <div className="App">
       <button onClick={onClickFetchUser}>データ取得</button>
       <>
-        {userProfiles.map((user) => {
-          console.log(user);
-          <UserCard key={user.id} user={user} />;
-        })}
+        {userProfiles.map((user) => (
+          <UserCard key={user.id} user={user} />
+        ))}
       </>
     </div>
   );
