@@ -7,7 +7,6 @@ type Props = {
 
 export const UserCard: VFC<Props> = (props) => {
   const { user } = props;
-  console.log(user);
 
   const style = {
     border: "solid 1px #ccc",
